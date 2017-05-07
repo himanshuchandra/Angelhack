@@ -1,16 +1,19 @@
-<div>Credits available:{{Credits}}</div>
+<div id="div_bg">
+  <div class="wrap_bg">
+<div id="credits">Credits available:{{Credits}}</div> <br>
 
 <br>
 <br>
 
-<button ng-hide="ready" ng-click="displayProduct()">Are you ready to view the product?</button>
+<button ng-hide="ready" id="enter_data" ng-click="displayProduct()" class="btn btn-primary btn-lg active">Are you ready to view the product?</button>
 
-<div ng-hide="productDisplay">
-<img src="../Products/pixel.jpg">
+<div ng-hide="productDisplay" id="prod_dis">
+<img src="../Products/pixel.jpg" style="height:400px;width:900px; margin-left:100px;">
 <h3>Enter the first sentence that come to your mind</h3>
-<input type="text" id="reviewText" ng-keyup="typing()" onkeypress="captureImage();" ng-model="sentiment"/>
-<input type="button" ng-disabled="done" value="Done!" ng-click="sendToDjango();"/>
-
+<div class="sample">
+<input type="text" id="reviewText" ng-keyup="typing()" onkeypress="captureImage();" class="form-control" ng-model="sentiment"/> <br>
+<input type="button" ng-disabled="done" class="btn btn-default btn-lg active"  value="Done!" ng-click="sendToDjango();"/>
+</div>
 
 <video id="video" width="640" height="480" autoplay style="display: none"></video>
 
@@ -20,4 +23,6 @@
 <div id="div1"></div> 
 
 <button id="snap" ng-hide="clickButton">Click Photo</button>
-<div ng-hide="finishText">ThankYou For Your Review ! 100 Credits have been transfered to your account! </div>
+<div ng-hide="finishText" id="final_credits">ThankYou For Your Review ! 100 Credits have been transfered to your account! </div>
+</div>
+</div>

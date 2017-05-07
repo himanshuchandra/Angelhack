@@ -46,6 +46,17 @@ angular.module('webskeletonApp')
                defer.reject(error);
            }) 
             return defer.promise;
+        },
+
+        callDjango:function(djangoObject){
+          var defer = $q.defer(); 
+          $http.post(requrl+"/writeDjango",djangoObject)
+          .then(function(data){
+               defer.resolve(data);
+           },function(error){
+               defer.reject(error);
+           }) 
+            return defer.promise;
         }
 
     };

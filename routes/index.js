@@ -92,4 +92,16 @@ router.post('/logout',function(request,response){
     dbOperations.destroySession(request,response);
 });
 
+router.post('/writeDjango',function(request,response){
+    console.log("helloooooooooooooooooooooooooooooooo");
+    var data=request.body;
+    var json = JSON.stringify(data);
+    var fs= require('fs');
+    fs.writeFile('./public/sentiment/file3.json',json,'utf8',function(err){
+        if(err) console.log(err);
+    });
+    console.log(data);
+    response.send("success");
+});
+
 module.exports = router;

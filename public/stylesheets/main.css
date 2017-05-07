@@ -200,9 +200,10 @@ a{
 /*===================================*/
 #slide-show .logo{
     position: absolute;
-    top: 34%;
+    top: 25%;
     left: 14%;
     width: 35%;
+        background-color: rgba(0,0,0,0.06);
 }
 
 #slide-show .logo img{
@@ -687,4 +688,58 @@ font-size: 1.3em !important;
     left: 46%;
     background:  linear-gradient(to bottom, rgba(184,198,223,1) 0%,rgba(109,136,183,1) 100%);
     border-radius: 6px;
+}
+
+#div_bg{
+    background-image: url(/images/bg.jpg);
+    height: 900px;
+    
+}
+
+#enter_data{
+        position: absolute;
+    left: 24%;
+    /*height: 50%;*/
+    width: 50%
+}
+
+.wrap_bg{
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#prod_dis{
+    position: absolute;
+    left: 12%;
+    top: 8.5%;
+    text-align: center;
+    color: darkorange;
+    font-weight: 900;
+    /*width-min: 1200px;*/
+}
+#prod_dis img{
+    width: 130%;
+    height: 80%;
+}
+
+.sample{
+    text-align: center !important;
+    position: absolute;
+    left: 35%;
+}
+
+#credits{
+    position: absolute;
+    left: 41%;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+#final_credits{
+    position: absolute;
+    left: 24%;
+    font-weight: 700;
+    font-size: 22px;
 }

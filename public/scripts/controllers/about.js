@@ -34,5 +34,27 @@ angular.module('webskeletonApp')
       $scope.productDisplay=true;
       $scope.finishText=false;
       $scope.Credits+=100;
+      $scope.callDjango();
     }
+
+    $scope.callDjango=function(){
+
+      var djangoObject={
+        age:21,
+        sex:"male",
+        lattitude:"28.7041",
+        longitude:"77.1025",
+        sentiment:$scope.sentiment
+
+      }
+
+      var promise = webindex.callDjango(djangoObject);
+        promise.then(function(data){
+           console.log("success");
+        },function(error){
+           console.log("fail");
+        });
+    }
+
+
   });
