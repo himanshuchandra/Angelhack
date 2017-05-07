@@ -25,6 +25,7 @@ angular.module('webskeletonApp')
      $scope.SignupButton=false;
      $scope.ProfileButton=true;
      $scope.LogoutButton=true;
+     $scope.ReviewProduct=true;
 
      $scope.ActivationMessage=undefined;
      
@@ -47,6 +48,7 @@ angular.module('webskeletonApp')
                 $scope.SignupButton=true;
                 $scope.ProfileButton=false;
                 $scope.LogoutButton=false;
+                $scope.ReviewProduct=false;
             }
             else{
                 $scope.loginStatus="Login/SignUp";

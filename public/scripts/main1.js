@@ -8,10 +8,13 @@ var timer;
 var val;
 var dataURL;
 var url;
+var link;
+var i=0;
+var j;
 window.addEventListener("load",function(){
     video = document.getElementById('video');
     canvas = document.getElementById('canvas');
-    context = canvas.getContext('2d');
+    context = canvas.getContext("2d");
     
 //    context.dropshadow = '(5px,5px,5px,red)';
 //    context.filter='contrast(100px)';
@@ -19,11 +22,11 @@ window.addEventListener("load",function(){
     snap = document.getElementById('snap');
     snap.addEventListener("click", function() {
 //        val=parseInt(document.getElementById('outputID').value);
-        timer = setInterval(function(){
-       val=parseInt(document.getElementById('outputID').value);
+    //     timer = setInterval(function(){
+    //    val=parseInt(document.getElementById('outputID').value);
+       j++;
+    // },1000);
        
-    },1000);
-        context.filter = 'grayscale('+val+'%)';
         
 //        dataURL = canvas.toDataURL();
          myImage = canvas.toDataURL("image/jpeg");
@@ -53,16 +56,16 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
 
 function create1(){
-    var link = document.createElement("a");
-
-//     // var img=document.getElementById("img");
-//     if(document.getElementById("img")==null){
-//     img = document.createElement("img");
-//     img.setAttribute("id","img");
-// }
-    link.href=canvas.toDataURL();
-    link.download="img.jpeg";
+    j=1;
+    if(link==null){
+    link = document.createElement("a");
     link.innerHTML="click";
+    }
+    link.style.display="none";
+    link.href=canvas.toDataURL();
+    link.download="img"+j+".jpeg";
+    j++;
+    snap.click();
 //    img.height=200;
     document.getElementById("div1").appendChild(link);
 }
@@ -73,5 +76,29 @@ function create1(){
                 Canvas2Image.saveAsPNG(canvas);
             }
 
-
+function captureImage(){
+    //      timer = setInterval(function(){
+    // //    val=parseInt(document.getElementById('outputID').value);
+    //   create1();
+    //     // while(i<3){
+        
+    //     link.click();
+    //     i++;
+    //     // i++;
+    // // }
+    // },2000);
+   
+    //     if(i==3){
+    //     clearInterval(timer);
+    //     }
+    myVar = setTimeout(function(){
+        create1();
+        link.click();
+        i++;    
+    }, 100);
+  
+    if(i>=3){
+        clearTimeout(myVar);
+    }
+}
 

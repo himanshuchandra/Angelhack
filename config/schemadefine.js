@@ -28,7 +28,10 @@ const userSchema= new schema({
   role:String,
   registrationdate:Date,
   socialconnection:String,
-  updated:Boolean
+  updated:Boolean,
+  credits:Number,
+  age:Number,
+  sex:String
 });
 
 const User = mongoose.model(config.dbCollection,userSchema); 

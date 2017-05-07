@@ -49,6 +49,9 @@ const dbOperations={
         data.username=request.body.username;
         data.password1=request.body.password1;
         data.role="customer";
+        data.age=19;
+        data.sex="male";
+        data.credits=300;
     
         const encrypt=require('../encrypt');
         var salt=encrypt.genRandomString(16);

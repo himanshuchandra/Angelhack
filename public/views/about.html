@@ -1,11 +1,23 @@
-<p>This is the about view.</p>
-<br>   
+<div>Credits available:{{Credits}}</div>
+
+<br>
+<br>
+
+<button ng-hide="ready" ng-click="displayProduct()">Are you ready to view the product?</button>
+
+<div ng-hide="productDisplay">
+<img src="../Products/pixel.jpg">
+<h3>Enter the first sentence that come to your mind</h3>
+<input type="text" id="reviewText" ng-keyup="typing()" onkeypress="captureImage();" ng-model="sentiment"/>
+<input type="button" ng-disabled="done" value="Done!" ng-click="sendToDjango();"/>
+
 
 <video id="video" width="640" height="480" autoplay style="display: none"></video>
-<button id="snap">Click Photo</button>
+
 <canvas id="canvas" width="640" height="480" style="display: none"></canvas>
-   <input type="range" min="1" max="100" onchange="outputID.value=value">
- <!--<canvas id="c" width="640" height="480"></canvas>  -->
-<output id="outputID">10</output>   
+</div>
+
 <div id="div1"></div> 
 
+<button id="snap" ng-hide="clickButton">Click Photo</button>
+<div ng-hide="finishText">ThankYou For Your Review ! 100 Credits have been transfered to your account! </div>
