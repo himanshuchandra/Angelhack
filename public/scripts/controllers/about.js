@@ -22,7 +22,7 @@ angular.module('webskeletonApp')
     }
 
     $scope.typing=function(){
-      if($scope.sentiment.length>25){
+      if($scope.sentiment.length>18){
         $scope.done=false;
       }
       else{
