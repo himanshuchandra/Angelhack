@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "valiant-adviser-166811",
+  "private_key_id": "83ac0cd57959fea95e91f157587962c418c2654a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvKB8HsKOamR3e\nUyMQD6VKKqSAtUSuYHT1xdmxyr9l6zFWi6G1l5m+yq1/aNEPql5ysN3mp4jFeRRR\npYh+NMp+J8167H+NzelAlMrC1drraCGya/ZX3qCBYqpqNVHYZkMZEb+tR/fSEJVe\nVDMJuQRUild2Gkk62w43KzIqnag9udEurdD5zRSorw9Zxwl1VJNf2LJn0TK2tZVX\nqsJ0I0u4Gqchv+GAdazwbfKzMVWOiII/oQxlVN4hDkOgFN9Jvw4VNXT70D8T5omf\nTmy/hLnSB2h+2p5TKr0w0ZD2TevWkCdXSWmtwlU37UHpXcruLUbYdv3o1Lvdm4+F\nMQK0C6JlAgMBAAECggEAUEUgw1NuBqF5ELQk821YIH8eWGW6DffiYefD9jimMjzw\npWrkNuY87TTRAfy1Imq/UexAJT5N7cGpUCl+PehPjDUNc/ICGqhs5s3JhjSfWRal\nqrDTej1qbSEcXAQHeBaVVV3O68h5h+lVqp8HrML/ewbTQiqVuMU+5IWFPgZ2XaKR\nRaVhu1m6oHRINIzDv0U/hZ92EP8y4kTgXBvIPb7Gd1nxRk9mVKWnfkQTRFDWi+yj\nmYNiD+NxcmwQguPKoUkMked7t8rVScRB1Q4AZJ+2Fb5Pmon8iDHJoJdOc8qwrFAy\nzmCTdqiFhI7Vo3Z9QgK7+L5woO1Od6RYto8lA1pDWQKBgQDr2fTY0biAAvb71ZZF\n5nNljZ5abnBGPwgTIYiNtxEoVL3adbS5TwgdeN6O1zWypo+MI2m99sx4Rzv6JkTp\nOEnL2KNSkXv/Q1dN8p42gi/lyYQZyqso4LgyVSa6W1iPXlRp4bJZLHcozEQzUGn4\nq7DQO/qD0YhUSHlS0V5eak1LvwKBgQC+Hsd3BES9VnmpCBPZXINlEHE9HuOXtm5c\nIucrBo2k+yGsiR/3Ytkt2seDkGTleDMy/CidfIzI4UrWgBmpNab8sT4PZY0XzKjX\ndYZHtTC7pKVsu+lMwOWHPaXEL0/PesQXnisFDkZ75zMSFvLCHJKtGVrDOsHqybNo\nx3ZrVCGq2wKBgApBpjYvmJhoiJkXBrvvc6E88V/5YYSMhStfz/JpvaNFXCQ97igI\n2c9+TB9mGH22ZJOxjo2mR+oLHv6X33NM8VieCSw0C3JkWU2YeWzhaHfTtZzxhVP3\nwcrejRqZklZZwc4A9KKQHnZ1u5mHq7QWs0+67AADgqw3op8JX9M3SDk9AoGBALY3\nz9uNdsi1wiM0/7k7xx+tU6tOGLrG+h1Kwp9lR4sRu2OfhcjYr+kYIFNDqMCapQ+/\nyLmwr0q1S8Iswut/5c2Zny6omUNvP4BKPuopiky+cGK389JBq3wkpOVUpzznoFw2\nl2rgFMQagsNaxU8wjZBkla46ebOroE3TpvcVirMzAoGAE28HJ7jHvXbD9ONuJ11y\npU5bojG72Ax8F1/av5djX0uORHo3jPnkhYXRMokTR2bg9JtPifPtmCFTXCRLcywn\nfR+MLyeR1uNE3Mbnt+PeejPtyGsSaYM9/37XbGbgIA5AZkCeDBAqPW+jAnaClLAE\ndZbhSyYLway/eNWsV/+B/Ow=\n-----END PRIVATE KEY-----\n",
+  "client_email": "angelhack2017@valiant-adviser-166811.iam.gserviceaccount.com",
+  "client_id": "117012315232765422174",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/angelhack2017%40valiant-adviser-166811.iam.gserviceaccount.com"
+}

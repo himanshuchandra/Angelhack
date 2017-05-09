@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block body %}
+    <br>
+    <br>
+    <div class="container">
+        <form enctype="application/x-www-form-urlencoded" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Product</label>
+                <select name="pslug">
+                    {% for product in products %}
+                        <option value="{{ product.pslug }}">{{ product.pname }}</option>
+                    {% endfor %}
+                </select><br>
+            </div>
+            <div class="form-group">
+                <label>Text</label>
+                <input type="text" name="text">
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="text" name="age">
+            </div>
+            <div class="form-group">
+                <label>Longitude</label>
+                <input type="text" name="longitude">
+            </div>
+            <div class="form-group">
+                <label>latitude</label>
+                <input type="text" name="latitude">
+            </div>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block body %}
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+  <h2 style="text-align: center">See how your product is reviewed around the globe !!</h2>
+
+  <div id="container1" style="width: 80%; max-height: 450px; position:absolute; left:5%"></div>
+
+
+     <script>
+
+      var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container1'),
+        projection: 'mercator',
+        height: 500,
+        fills: {
+          defaultFill: '#f0af0a',
+          lt50: 'rgba(0,244,244,0.9)',
+          gt50: 'red'
+        },
+
+        data: {
+          USA: {fillKey: 'lt50' },
+          RUS: {fillKey: 'lt50' },
+          CAN: {fillKey: 'lt50' },
+          BRA: {fillKey: 'lt50' },
+          ARG: {fillKey: 'lt50'},
+          COL: {fillKey: 'lt50' },
+          AUS: {fillKey: 'lt50' },
+          ZAF: {fillKey: 'lt50' },
+          MAD: {fillKey: 'lt50' },
+          IND: {fillKey: 'lt50' }
+        }
+      });
+
+
+     map.bubbles([
+       {name: 'Chile', positive: 0.912233, negative: -0.16577,  latitude: 21.32, longitude: 5.32, radius: 10, fillKey: 'gt50'},
+       {name: 'Delhi', positive: 0.454223, negative: -0.56644, latitude: -25.32, longitude: 120.32, radius: 10, fillKey: 'gt50'},
+       {name: 'Moscow', positive: 0.234443, negative: -0.85566, latitude: 21.32, longitude: -84.32, radius: 10, fillKey: 'gt50'},
+
+     ], {
+       popupTemplate: function(geo, data) {
+         return "<div class='hoverinfo'>" +data.name +'<br>Positive:'+ data.positive +'<br>Negative:'+data.negative + "</div>";
+       }
+     });
+     </script>
+{% endblock %}
